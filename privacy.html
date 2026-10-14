@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="G-Pilot Privacy Policy for the Android app.">
+  <title>G-Pilot Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f6f8fb; --card:#fff; --text:#17202a; --muted:#5b6673; --line:#dfe5ec; --link:#087f69; }
+    @media (prefers-color-scheme: dark) { :root { --bg:#11161b; --card:#1b2229; --text:#eef3f7; --muted:#b8c3cc; --line:#35414c; --link:#59d5b4; } }
+    * { box-sizing: border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:860px; margin:0 auto; padding:32px 20px 56px; }
+    article { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:28px clamp(20px,5vw,48px); box-shadow:0 8px 28px rgb(0 0 0 / 7%); }
+    h1 { margin:0 0 8px; font-size:clamp(28px,5vw,40px); line-height:1.15; }
+    h2 { margin:32px 0 10px; font-size:22px; line-height:1.25; }
+    h3 { margin:24px 0 8px; font-size:18px; }
+    p { margin:10px 0; }
+    ul { padding-left:24px; }
+    .meta { color:var(--muted); margin:0 0 24px; }
+    a { color:var(--link); }
+    .notice { border-left:4px solid var(--link); padding:10px 14px; background:color-mix(in srgb, var(--link) 10%, var(--card)); }
+    footer { color:var(--muted); font-size:14px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <h1>G-Pilot Privacy Policy</h1>
+        <p class="meta"><strong>Effective date:</strong> 14 October 2026<br>
+          <strong>App:</strong> G-Pilot (<code>com.gpilot.app</code>)<br>
+          <strong>Developer / publisher:</strong> G-Pilot<br>
+          <strong>Contact:</strong> <a href="mailto:gpilotcoreplus@gmail.com">gpilotcoreplus@gmail.com</a></p>
+      </header>
+
+      <p class="notice">This policy describes the current G-Pilot Android build. It is intended for a public, no-login page and will be updated if the app adds material data flows such as accounts, cloud sync, advertising, analytics or crash reporting.</p>
+
+      <h2>1. What this policy covers</h2>
+      <p>This policy explains how G-Pilot handles information when you use the app. G-Pilot is a driver work management and record-keeping tool for recording work income, expenses, goals and related progress.</p>
+
+      <h2>2. Information stored by G-Pilot</h2>
+      <p>Work income, work expenses, goals, notes, preferences and similar operating records are primarily stored locally on your device in the app's local storage and native local data stores.</p>
+      <p>G-Pilot does not provide a G-Pilot account or its own cloud database for these records. The current build does not send the ledger to a G-Pilot server. Local entitlement and G-Core state may also be stored to support the features shown in the app.</p>
+
+      <h2>3. Backup and restore</h2>
+      <p>Backup is user-initiated. G-Pilot can use the Android file picker to export or import a JSON backup file. The current backup flow uses an integrity/checksum mechanism to help detect file corruption. The current G-Core backup seam also supports encrypted backup handling for the relevant G-Core data.</p>
+      <p>Android automatic backup and device-transfer backup are disabled for the app. G-Pilot does not automatically upload the local ledger to a cloud backup service. An exported file is stored wherever you choose to save or share it, and that destination's privacy practices apply.</p>
+
+      <h2>4. Google ML Kit language features</h2>
+      <p>The current build uses Google ML Kit Language Identification and on-device Translation for display assistance. A translated display copy does not replace the stored ledger note. ML Kit models may be downloaded through Google's services.</p>
+      <p>Google's ML Kit Android disclosure describes technical information that may be processed for diagnostics and usage analytics, including device and app information, identifiers or installation information, performance metrics, API configuration, feature input/output size, feature version, event type and error information. Language Identification can involve the identified language, and Translation can involve source and destination language configuration. Google states that this service data is encrypted in transit and is not shared with third parties by ML Kit. G-Pilot does not operate its own server for this feature.</p>
+
+      <h2>5. Google Play Billing</h2>
+      <p>If you use a Core+ purchase or subscription flow, Google Play handles the Play purchase and subscription communication. G-Pilot receives the product and purchase information needed to determine local eligibility.</p>
+      <p>Purchase tokens are used transiently for acknowledgement and are not intentionally exposed to the WebView or stored as a user ledger. G-Pilot does not operate its own payment processor or account backend.</p>
+
+      <h2>6. Permissions and other services</h2>
+      <p>The current build requests network access for SDK, Play services and billing-related communication. It does not request location, contacts, camera, microphone or photo-library permissions.</p>
+      <p>No advertising SDK, Crashlytics SDK, Firebase Analytics SDK or app-owned analytics/crash endpoint was found in the audited v1.1.0-phase2.1 source and AAB. Third-party services may process technical or purchase-related information under their own policies.</p>
+
+      <h2>7. Retention and deletion</h2>
+      <p>Local app records remain until you delete them, clear the app's data, uninstall the app, or replace them through the app's data tools. Exported backup files are controlled by you and must be deleted from their chosen storage locations separately.</p>
+      <p>G-Pilot has no developer cloud ledger to delete in the current build.</p>
+
+      <h2>8. Children</h2>
+      <p>G-Pilot is intended for adult work and productivity use and is not directed to children.</p>
+
+      <h2>9. Changes and contact</h2>
+      <p>Material changes to data handling will be reflected in an updated policy. Questions can be sent to <a href="mailto:gpilotcoreplus@gmail.com">gpilotcoreplus@gmail.com</a>.</p>
+
+      <footer>Last updated: 14 October 2026</footer>
+    </article>
+  </main>
+</body>
+</html>
