@@ -20,11 +20,15 @@
     .meta { color:var(--muted); margin:0 0 24px; }
     a { color:var(--link); }
     .notice { border-left:4px solid var(--link); padding:10px 14px; background:color-mix(in srgb, var(--link) 10%, var(--card)); }
+    .app-back { margin:0 0 14px; }
+    .back-link { display:inline-flex; align-items:center; gap:8px; padding:10px 14px; border:1px solid var(--link); border-radius:12px; background:color-mix(in srgb, var(--link) 10%, var(--card)); color:var(--text); font-weight:700; text-decoration:none; }
+    .back-link:focus-visible { outline:3px solid color-mix(in srgb, var(--link) 40%, transparent); outline-offset:3px; }
     footer { color:var(--muted); font-size:14px; margin-top:28px; }
   </style>
 </head>
 <body>
   <main>
+    <p class="app-back"><a class="back-link" href="#" aria-label="Back to G-Pilot" onclick="try{if(window.GpilotAndroid&&window.GpilotAndroid.returnToGpilot){window.GpilotAndroid.returnToGpilot();}else if(window.history.length>1){window.history.back();}}catch(e){if(window.history.length>1){window.history.back();}}return false;">← Back to G-Pilot</a></p>
     <article>
       <header>
         <h1>G-Pilot Privacy Policy</h1>
